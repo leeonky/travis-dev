@@ -8,7 +8,7 @@ public class DemoApplicationTests {
 
     @Test
     public void contextLoads() {
-        assertEquals(1, 1);
+        assertEquals("Hello", new DemoApplication().getMessage());
     }
 }
 

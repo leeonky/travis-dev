@@ -1,6 +1,6 @@
 ## TestCI
 
-[![travis-ci](https://api.travis-ci.org/leeonky/travis-dev.svg?branch=master)](https://api.travis-ci.org/leeonky/travis-dev.svg?branch=master)
+[![travis-ci](https://api.travis-ci.org/leeonky/travis-dev.svg?branch=master)](https://travis-ci.org/leeonky/travis-dev)
 
 
 
