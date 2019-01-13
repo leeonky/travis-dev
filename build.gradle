@@ -11,7 +11,7 @@ buildscript {
 }
 
 plugins {
-    id 'net.saliman.cobertura' version '2.3.1'
+    id 'jacoco'
     id 'com.github.kt3k.coveralls' version '2.8.2'
 }
 
@@ -20,11 +20,17 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
-cobertura.coverageFormats = ['html', 'xml']
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
+
+jacocoTestReport {
+    reports {
+        xml.enabled = true // for coveralls
+        html.enabled = true
+    }
+}
 
 repositories {
     mavenCentral()
