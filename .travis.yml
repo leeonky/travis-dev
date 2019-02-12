@@ -1,8 +1,8 @@
 language: java
 
 after_success:
-- ./gradlew jacocoTestReport coveralls
-- git config --global user.email "travis@travis-ci.org"
-- git config --global user.name "Travis CI"
-- git tag test
-- git push -q "https://${GH_TOKEN}@github.com/leeonky/travis-dev.git" --tags
+- ./gradlew jacocoTestReport coveralls && \
+  git config --global user.email "travis@travis-ci.org" && \
+  git config --global user.name "Travis CI" && \
+  git tag test2 -a -m 'Release' && \
+  git push -q "https://${GH_TOKEN}@github.com/leeonky/travis-dev.git" --tags
