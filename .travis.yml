@@ -1,6 +1,6 @@
 language: java
 before_script:
-- export PUB_VERSION=test2
+- export PUB_VERSION=test3
 - echo 'Check version and tag'
 - bash -c '! (git tag | grep "^${PUB_VERSION}$")'
 
